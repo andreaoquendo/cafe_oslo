@@ -1,0 +1,601 @@
+/*--------------------- RESET --------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---------------- ACTUAL CSS------------------*/
+
+*{
+    box-sizing: border-box;
+}
+/*------ fixed -----------*/
+
+h1{
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+
+h2{
+    font-size: 14px; /*28px*/
+}
+
+h3{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #f5f0ed;
+    text-align: center;
+}
+
+/*-- mobile first --*/
+
+/* --- portada principal --- */
+#landing-page {
+    background-image: url(Proyecto/imgs/Fondo1.jpg);
+    height:450px;
+    width:100%;
+    
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    
+    text-align: center;
+}
+
+/* ---- botones ----- */
+#landing-page #enlace-menu{
+    color:#f5f0ed;
+    text-decoration: none;
+    background-color: #d03b40;
+    height:40px;
+    width: 40px;
+}
+
+#enlace-menu{
+    position: absolute;
+    top:8%;
+    right:5%;
+}
+
+#landing-page #enlaze-menu p{
+    border: 3px solid #ded6c0;
+    width: 40px;
+}
+
+#landing-page .navegacion{
+    list-style: none;
+    position:absolute;
+    top:16.8%;
+    width:150px;
+    right:5%;
+    height:auto;
+    
+    font-weight:bolder;
+    letter-spacing: 0.5px;
+    
+    float: none;
+    z-index: 1;
+}
+
+#landing-page .navegacion a{
+    text-decoration: none;
+    color:#f5f0ed;
+    font-size:14px;
+}
+
+#landing-page .navegacion li{
+    display: block;
+    margin-right: 10px;
+    height:25px;
+    padding-top:7px;
+}
+
+#landing-page span.title{
+    display: block;
+    height:75%;
+    width: 90%;
+    margin-left:5%;
+
+    position:absolute;
+    top: 25%;
+    color: #f5f0ed;
+    overflow: hidden;
+    
+    line-height: normal;
+}
+
+#landing-page p.line{
+    display: block;
+    border:1px solid #f5f0ed;
+    width:35%;
+    margin-left:32.5%;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+#landing-page img{
+    position:absolute;
+    left:4%;
+    top:4%;
+    
+    height: 50px;
+}
+
+/*-- todos los duplicator ----*/
+
+.duplicator{
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    line-height: normal;
+}
+
+.duplicator .d{
+    height: 270px;
+    width: 100%;
+    position:relative;
+    padding-bottom: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+    
+}
+
+.duplicator h1{
+    padding-top:10%;
+    margin-bottom: 10px;
+}
+
+/*--segunda línea características específicas de cada caja*/
+#promote #brunch{
+    background-color: #d03b40;
+    color:#ded6c0;
+}
+
+#promote #fiestas{
+    background-color: #ded6c0;
+    color: #d03b40;
+}
+
+/*--penultima línea características específicas --*/
+
+#contacto #contacta{
+   background-color: #ded6c0;
+    color: #d03b40; 
+}
+
+#contacto #estamos{
+    background-color: #d03b40;
+    color:#ded6c0;
+}
+
+.duplicator .d a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contacto #contacta a{
+    color:#d03b40;
+}
+
+#contacto #estamos a{
+    color: #ded6c0;
+}
+
+/* tercer block */
+
+.desayuno{
+    height:400px;
+    width:100%;
+    position: relative;
+    background-image: url(Proyecto/imgs/Fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 25% 1%;
+    line-height: normal;
+    
+}
+
+.desayuno p{
+    border: 1px solid #f5f0ed;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.desayuno span{
+    margin-bottom: 20px;
+    height: auto;
+    width:auto;
+    padding-bottom: 20px;
+}
+
+.desayuno a{
+    position: absolute;
+    bottom: 10%;
+    left:3%;
+    right: 3%;
+    height: auto;
+    width: auto;
+    padding: 9px;
+    text-decoration: none;
+    color: #f5f0ed;
+    border: 2px solid #f5f0ed;
+    margin-top: 20px;
+}
+
+.quadriplicator{
+    height: auto;
+    color:#3c3c3b;
+}
+
+.quadriplicator .pedazo{
+    height:auto;
+    background-color: #f5f0ed;
+    padding:10% 6%;
+    line-height: normal;
+    text-align: left
+}
+
+.quadriplicator .pedazo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+
+.quadriplicator .pedazo h3{
+    margin-top: 10px;
+}
+
+#footer{
+    background-color: #241d1b;
+    height: 80px;
+    position: relative;
+    text-align: left;
+    line-height: normal;
+}
+
+#footer ul{
+    list-style: circle;
+}
+
+#footer span.text{
+    position: absolute;
+    left:20px;
+    bottom: 20px;
+}
+
+#footer .dot{
+    display:none;
+}
+
+/*---- configuración de botones ------*/
+
+@media screen and (max-width:600px){
+    .js .navegacion{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .5s;
+        position: absolute;
+        background-color: #d03b40;
+    }
+    .js .navegacion a{
+        padding: 5px 10px;
+        
+        
+    }
+    
+    .js .navegacion.menu-desplegado
+    {
+        max-height:600px;
+    }
+    
+}
+
+@media screen and (min-width:601px){
+    .lanzador-menu{
+        display:none;
+    }
+    
+    #landing-page #menu{
+        list-style: none;
+        position:absolute;
+        right:2%;
+        top:8%;
+
+        height:20px;
+        width:auto;
+    
+        padding: 0;
+        font-weight:bolder;
+        letter-spacing: 0.5px;
+    }
+    
+    #landing-page #menu li{
+        display: inline-block;
+        margin-right: 10px;
+        padding: 0;
+    }
+}
+
+/*---------- media screen min:601 ------------*/
+
+@media screen and (min-width:600px){
+    
+    body{
+        font-size: 16px;
+    }
+    
+    h2{
+        font-size:28px;
+    }
+    #landing-page{
+        height: 70%;
+        max-height: 600px;
+    }
+    #landing-page h1{
+        font-size: 44px;
+    }
+    #landing-page span.title{
+        display: block;
+        height:70%;
+        width: 70%;
+        margin-left:15%;
+
+        top: 30%;
+    }
+    #landing-page img{
+        left:2%;
+
+        height: 50px;
+    }
+    .duplicator{
+        height:350px;
+        width:100%;
+    }
+    .duplicator .d{
+        width:50%;
+        height:inherit;
+        float:left;
+        padding-right: 8%;
+        padding-left: 8%;
+        
+    }
+    .duplicator h1{
+        padding-top: 15%;
+        padding-right: 7%;
+        padding-left: 7%;
+    }
+    
+    .desayuno{
+        height:500px;
+        width:100%;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        padding: 10% 27%;
+        line-height: normal;
+    
+    }
+    
+    .desayuno h1{
+        font-size: 44px;
+    }
+    .desayuno p{
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .desayuno span{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .desayuno a{
+        position: absolute;
+        bottom: 20%;
+        left:35%;
+        right:35%;
+        height: auto;
+        width: auto;
+    }
+    
+    #footer span.text{
+        left:30px;
+        bottom: 30px;
+    }
+    #footer br{
+        display: none;
+    }
+    #footer .dot{
+        display: contents;
+    }
+    
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+   .duplicator .d{
+        width:50%;
+        height:inherit;
+        float:left;
+        padding-right: 5%;
+        padding-left: 5%;
+        
+    }
+    .duplicator h1{
+        padding-top: 20%;
+        padding-right: 3%;
+        padding-left: 3%;
+    } 
+    .desayuno{
+        padding: 14% 20%;
+        line-height: normal;
+    
+    }
+    .desayuno p{
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .desayuno span{
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+    }
+
+    .desayuno a{
+        position: absolute;
+        bottom: 18%;
+        left:20%;
+        right:20%;
+        height: auto;
+        width: auto;
+    }
+    .quadriplicator .pedazo{
+        padding-top:30px;
+        padding-bottom: 30px;
+        padding-left:60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (min-width:900px){
+    .quadriplicator{
+        height:auto;
+        width:100%;
+    }
+    .quadriplicator .pedazo{
+        float:left;
+        width:50%;
+        height:300px;
+        padding:0;
+        padding-top:5%;
+        padding-bottom:5%;
+        padding-left: 2%;
+        padding-right: 2%;
+
+    }
+    .quadriplicator .pedazo img{
+        float:left;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: auto;
+        margin-right: auto;
+        width:25%;
+        max-width:150px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-right: 2%;
+
+            
+    }
+    
+    .quadriplicator .pedazo span{
+        height: 94%;
+        padding-top:auto;
+        float:left;
+        width: 73%;
+    }
+
+    .quadriplicator .pedazo h3{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    #landing-page span.title{
+        display: block;
+        height:70%;
+        width: 50%;
+        margin-left:25%;
+
+        top: 30%;
+    }
+    
+}
+
+@media screen and (min-width:1600px){
+    h1{
+        font-size: 38px;
+    }
+    body{
+        font-size: 20px;
+    }
+    #landing-page{
+        height:80%;
+        max-height: 900px;
+    }
+    .desayuno{
+        max-height: 800px;
+        height: 70%;
+    }
+    .desayuno h1{
+        padding-top: 10%;
+    }
+    .duplicator {
+        height: 400px;
+    }
+    .quadriplicator .pedazo img{
+        padding-top:0;
+    }
+    .quadriplicator .pedazo{
+        padding-bottom: 20px;
+    }
+    .desayuno{
+        padding-top: 7%;
+    }
+}
